@@ -40,14 +40,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3O-7r-rNb">
                                                 <rect key="frame" x="0.0" y="0.0" width="85.5" height="30"/>
                                                 <state key="normal" title="Red"/>
+                                                <connections>
+                                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WsM-mv-CiB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXT-gV-jWq">
                                                 <rect key="frame" x="101.5" y="0.0" width="85" height="30"/>
                                                 <state key="normal" title="Orange"/>
+                                                <connections>
+                                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xws-si-Y4e"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajj-ia-jtc">
                                                 <rect key="frame" x="202.5" y="0.0" width="85.5" height="30"/>
                                                 <state key="normal" title="Yellow"/>
+                                                <connections>
+                                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwY-xS-Zy6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -57,6 +66,9 @@
                                             <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpN-4X-ko0">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
                                                 <state key="normal" title="Green"/>
+                                                <connections>
+                                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="13x-HQ-y0G"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -66,14 +78,23 @@
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQ7-L4-5Cc">
                                                 <rect key="frame" x="0.0" y="0.0" width="85.5" height="30"/>
                                                 <state key="normal" title="Blue"/>
+                                                <connections>
+                                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="old-DG-G8z"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn0-em-AhI">
                                                 <rect key="frame" x="101.5" y="0.0" width="85" height="30"/>
                                                 <state key="normal" title="Indigo"/>
+                                                <connections>
+                                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwc-0x-naH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltw-VX-uXu">
                                                 <rect key="frame" x="202.5" y="0.0" width="85.5" height="30"/>
                                                 <state key="normal" title="Violet"/>
+                                                <connections>
+                                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Hz-Nj-U8T"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -94,14 +115,14 @@
                                                 <state key="normal" title="Left"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvJ-02-XRc">
-                                                <rect key="frame" x="112" y="0.0" width="64" height="30"/>
+                                                <rect key="frame" x="112" y="0.0" width="85" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="qB2-qn-tx8"/>
                                                 </constraints>
                                                 <state key="normal" title="Center"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbG-ao-WrP">
-                                                <rect key="frame" x="203" y="0.0" width="85" height="30"/>
+                                                <rect key="frame" x="224" y="0.0" width="64" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="8Lj-b2-2lJ"/>
                                                 </constraints>
@@ -120,6 +141,9 @@
                             <constraint firstAttribute="trailing" secondItem="27Z-Xz-J6o" secondAttribute="trailing" constant="16" id="VSc-bk-Ggl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorLabel" destination="aIn-J3-nEX" id="s5p-yo-FfG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
